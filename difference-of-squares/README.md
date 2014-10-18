@@ -4,14 +4,20 @@ Find the difference between the sum of the squares of the first one hundred natu
 
 The sum of the squares of the first ten natural numbers is,
 
-1**2 + 2**2 + ... + 10**2 = 385
+    1**2 + 2**2 + ... + 10**2 = 385
 
 The square of the sum of the first ten natural numbers is,
 
-(1 + 2 + ... + 10)**2 = 55**2 = 3025
+    (1 + 2 + ... + 10)**2 = 55**2 = 3025
 
-Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 - 385 = 2640.
+Hence the difference between the sum of the squares of the first ten
+natural numbers and the square of the sum is 3025 - 385 = 2640.
 
+### Submitting Exercises
+
+Note that, when trying to submit an exercise, make sure you're exercise file you're submitting is in the `exercism/python/<exerciseName>` directory.
+
+For example, if you're submitting `bob.py` for the Bob exercise, the submit command would be something like `exercism submit <path_to_exercism_dir>/python/bob/bob.py`.
 
 ## Source
 

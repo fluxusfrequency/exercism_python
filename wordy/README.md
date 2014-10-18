@@ -10,7 +10,8 @@ E.g.
 
 The program should handle large numbers and negative numbers.
 
-Use the tests to drive your solution by deleting the `skip` in one test at a time.
+Use the tests to drive your solution by deleting the `skip` in one test
+at a time.
 
 ## Step 2
 
@@ -64,6 +65,11 @@ Implement questions of the type:
 
 Remember to write failing tests for this code.
 
+### Submitting Exercises
+
+Note that, when trying to submit an exercise, make sure you're exercise file you're submitting is in the `exercism/python/<exerciseName>` directory.
+
+For example, if you're submitting `bob.py` for the Bob exercise, the submit command would be something like `exercism submit <path_to_exercism_dir>/python/bob/bob.py`.
 
 ## Source
 

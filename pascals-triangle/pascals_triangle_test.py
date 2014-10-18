@@ -1,5 +1,6 @@
 from pascals_triangle import triangle, row, is_triangle
 
+import os
 import unittest
 
 class PascalsTriangleTest(unittest.TestCase):

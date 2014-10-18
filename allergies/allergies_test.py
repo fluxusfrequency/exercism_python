@@ -1,9 +1,6 @@
-try:
-    from allergies import Allergies
-except ImportError:
-    raise SystemExit('Could not find allergies.py. Does it exist?')
-
 import unittest
+
+from allergies import Allergies
 
 
 class AllergiesTests(unittest.TestCase):
@@ -22,6 +19,7 @@ class AllergiesTests(unittest.TestCase):
         self.assertTrue(allergies.is_allergic_to('eggs'))
         self.assertTrue(allergies.is_allergic_to('shellfish'))
         self.assertFalse(allergies.is_allergic_to('strawberries'))
+
     def test_no_allergies_at_all(self):
         self.assertEqual([], Allergies(0).list)
 

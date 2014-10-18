@@ -1,7 +1,8 @@
-from handshake import handshake, code
-
 import os
 import unittest
+
+from handshake import handshake, code
+
 
 class HandshakeTest(unittest.TestCase):
     def test_shake_int(self):
@@ -31,19 +32,15 @@ class HandshakeTest(unittest.TestCase):
     def test_code3(self):
         self.assertEqual('11010', code(['jump','double blink']))
 
-    @unittest.skipUnless('NO_SKIP' in os.environ, "Not implemented yet")
     def test_composition1(self):
         self.assertEqual('11011', code(handshake(27)))
 
-    @unittest.skipUnless('NO_SKIP' in os.environ, "Not implemented yet")
     def test_composition2(self):
         self.assertEqual('1', code(handshake(1)))
 
-    @unittest.skipUnless('NO_SKIP' in os.environ, "Not implemented yet")
     def test_composition3(self):
         self.assertEqual('111', code(handshake('111')))
 
-    @unittest.skipUnless('NO_SKIP' in os.environ, "Not implemented yet")
     def test_composition4(self):
         inp = ['wink','double blink','jump']
         self.assertEqual(inp, handshake(code(inp)))

@@ -1,9 +1,6 @@
-try:
-    from twelve_days import sing, verse, verses
-except ImportError:
-    raise SystemExit('Could not find twelve_days.py. Does it exist?')
-
 import unittest
+
+from twelve_days import sing, verse, verses
 
 
 class TwelveDaysTests(unittest.TestCase):

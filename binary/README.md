@@ -4,8 +4,8 @@ Write a program that will convert a binary number, represented as a string (e.g.
 
 Write a program passing the tests.
 
-You will be guided to implement binary to decimal conversion.
-Given a binary input string, your program should be able to produce a decimal
+You will be guided to implement binary to decimal conversion.  Given a
+binary input string, your program should be able to produce a decimal
 output.
 
 ## Note
@@ -31,6 +31,11 @@ Binary is similar, but uses powers of 2 rather than powers of 10.
 
 So: `101 => 1*2^2 + 0*2^1 + 1*2^0 => 1*4 + 0*2 + 1*1 => 4 + 1 => 5 base 10`.
 
+### Submitting Exercises
+
+Note that, when trying to submit an exercise, make sure you're exercise file you're submitting is in the `exercism/python/<exerciseName>` directory.
+
+For example, if you're submitting `bob.py` for the Bob exercise, the submit command would be something like `exercism submit <path_to_exercism_dir>/python/bob/bob.py`.
 
 ## Source
 
