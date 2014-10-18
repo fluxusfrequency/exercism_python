@@ -1,0 +1,42 @@
+  bob
+  rna-transcription
+  matrix
+  word-count
+  twelve-days
+  anagram
+  beer-song
+  nucleotide-count
+  series
+saddle-points
+  largest-series-product
+  octal
+ocr-numbers
+  difference-of-squares
+  point-mutations
+  phone-number
+  pascals-triangle
+  allergies
+  grade-school
+  robot-name
+  minesweeper
+  etl
+  leap
+  sum-of-multiples
+  space-age
+  grains
+  gigasecond
+  palindrome-products
+  meetup
+  triangle
+  scrabble-score
+secret-handshake
+sieve
+nth-prime
+luhn
+roman-numerals
+binary
+prime-factors
+raindrops
+atbash-cipher
+wordy
+pythagorean-triplet
