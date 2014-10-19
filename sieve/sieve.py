@@ -1,17 +1,13 @@
 from math import sqrt
 
-def sieve(upper):
-    record = __initialize_sieve(upper)
-    i = 2
-    while i <= int(sqrt(upper)):
-        if record[i] is True:
-            j = i ** 2
-            while j <= upper:
-                record[j] = False
-                j += i
-        i += 1
+def sieve(limit):
+    record = [True for n in xrange(0, limit + 1)]
+    for prime in xrange(2, int(sqrt(limit)) + 1):
+        if record[prime]:
+            multiplier = prime ** 2
+            while multiplier <= limit:
+                record[multiplier] = False
+                multiplier += prime
+        prime += 1
 
-    return [n for n, marked in record.items() if marked is True]
-
-def __initialize_sieve(upper):
-    return {n: True for n in range(2, upper)}
+    return [i for i, n in enumerate(record) if n is True][2::]
