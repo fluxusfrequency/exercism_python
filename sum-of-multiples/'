@@ -1,6 +1,0 @@
-class SumOfMultiples:
-    def __init__(self, multiples):
-        self.multiples = multiples
-
-    def of(self, n):
-        return true
