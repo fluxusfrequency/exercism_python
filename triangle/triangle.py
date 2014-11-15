@@ -1,6 +1,11 @@
 class Triangle:
 
-    TYPES = ['equilateral', 'isosceles', 'scalene']
+    # Triangle types are looked up by the number of unique sides
+    TRIANGLE_TYPES = {
+        0: 'equilateral',
+        1: 'isosceles',
+        2: 'scalene'
+    }
 
     def __init__(self, *sides):
         self.sides = sides
@@ -8,14 +13,22 @@ class Triangle:
 
     def kind(self):
         unique = self._uniq()
-        return self.TYPES[len(unique) - 1]
-
-    def _validate(self, sides):
-        if any(side < 0 for side in self.sides) or not self._meets_triangle_equality():
-            raise TriangleError()
+        return self.TRIANGLE_TYPES[len(unique) - 1]
 
     def _uniq(self):
-        return list(set(self.sides))
+        return set(self.sides)
+
+    def _validate(self, sides):
+        if (not self._has_three_sides() or
+                self._has_negative_side() or not
+                self._meets_triangle_equality()):
+                    raise TriangleError()
+
+    def _has_three_sides(self):
+        return len(self.sides) == 3
+
+    def _has_negative_side(self):
+        return any(side < 0 for side in self.sides)
 
     def _meets_triangle_equality(self):
         ordered = sorted(self.sides)
