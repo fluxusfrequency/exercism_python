@@ -1,3 +1,2 @@
 def distance(base, other):
-    size = min(len(base), len(other))
-    return sum(base[i] != other[i] for i in range(size)) + abs(len(base) - len(other))
+    return sum(n1 != n2 for n1, n2 in zip(base, other))
