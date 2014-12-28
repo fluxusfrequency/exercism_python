@@ -1,8 +1,8 @@
 import re
 
-def Binary(binary):
+def parse_binary(binary):
     if _is_invalid(binary):
-        return 0
+        raise ValueError
 
     total = 0
     for i, char in enumerate(reversed(binary)):
@@ -10,5 +10,5 @@ def Binary(binary):
     return total
 
 def _is_invalid(binary):
-    return re.search(r"\D", binary)
+    return re.search(r"\D|[2..9]", binary)
 

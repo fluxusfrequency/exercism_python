@@ -1,12 +1,15 @@
 def check_lists(l1, l2):
     if (l1 == l2):
         return EQUAL
-    elif (__is_sublist(l1, l2)):
+    if l1 == []:
         return SUBLIST
-    elif (__is_sublist(l2, l1)):
+    if l2 == []:
         return SUPERLIST
-    else:
-        return UNEQUAL
+    if (__is_sublist(l1, l2)):
+        return SUBLIST
+    if (__is_sublist(l2, l1)):
+        return SUPERLIST
+    return UNEQUAL
 
 
 def __is_sublist(l1, l2):

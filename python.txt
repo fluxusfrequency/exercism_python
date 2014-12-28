@@ -1,3 +1,21 @@
+pythagorean-triplet
+saddle-points
+ocr-numbers
+zebra-puzzle
+hexadecimal
+crypto-square
+house
+sublist
+
+(deprecated)
+accumulate
+proverb
+strain
+trinary
+
+  hamming
+  kindergarten-garden
+  simple-cipher
   bob
   rna-transcription
   matrix
@@ -7,10 +25,8 @@
   beer-song
   nucleotide-count
   series
-saddle-points
   largest-series-product
   octal
-ocr-numbers
   difference-of-squares
   point-mutations
   phone-number
@@ -29,14 +45,13 @@ ocr-numbers
   meetup
   triangle
   scrabble-score
-secret-handshake
-sieve
-nth-prime
-luhn
-roman-numerals
-binary
-prime-factors
-raindrops
-atbash-cipher
-wordy
-pythagorean-triplet
+  secret-handshake
+  sieve
+  nth-prime
+  luhn
+  roman-numerals
+  binary
+  prime-factors
+  raindrops
+  atbash-cipher
+  wordy

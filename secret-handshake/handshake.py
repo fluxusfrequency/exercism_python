@@ -18,7 +18,10 @@ def code(messages):
     for message in messages:
         if message not in COMMANDS:
             return '0'
-    return bin(sum([(2 ** i) for i, command in enumerate(COMMANDS) if command in messages]))[2:]
+    if not __in_order(messages):
+        messages = list(reversed(messages))
+        return '1' + __encoded_messages(messages)
+    return __encoded_messages(messages)
 
 def __in_list(command, i):
     return command & (2 ** i) != 0
@@ -32,3 +35,11 @@ def __parse(code_pattern):
         else:
             code_pattern = int(code_pattern, 2)
     return code_pattern
+
+def __in_order(messages):
+    indices = [COMMANDS.index(message) for message in messages]
+    return sorted(indices) == indices
+
+def __encoded_messages(messages):
+    return bin(sum([(2 ** i) for i, command in enumerate(COMMANDS) if command in messages]))[2:]
+
