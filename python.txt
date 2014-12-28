@@ -2,10 +2,8 @@ pythagorean-triplet
 saddle-points
 ocr-numbers
 zebra-puzzle
-hexadecimal
 crypto-square
 house
-sublist
 
 (deprecated)
 accumulate
@@ -13,6 +11,8 @@ proverb
 strain
 trinary
 
+  sublist
+  hexadecimal
   hamming
   kindergarten-garden
   simple-cipher

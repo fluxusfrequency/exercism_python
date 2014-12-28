@@ -18,7 +18,6 @@ class SublistTest(unittest.TestCase):
         l2 = [0, 1, 2]
         self.assertEqual(EQUAL, check_lists(l1, l2))
 
-    @unittest.skip('')
     def test_different_lists(self):
         l1 = list(range(1000000))
         l2 = list(range(1, 1000001))
@@ -71,7 +70,7 @@ class SublistTest(unittest.TestCase):
 
     def test_spread_sublist(self):
         multiples_of_3 = list(range(3, 200, 3))
-        multiples_of_15 = list(range(3, 200, 15))
+        multiples_of_15 = list(range(0, 200, 15))
         self.assertEqual(UNEQUAL,
                          check_lists(multiples_of_15, multiples_of_3))
 
