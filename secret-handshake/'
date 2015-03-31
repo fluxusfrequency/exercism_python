@@ -39,7 +39,7 @@ def __in_order(messages):
     return sorted(indices) == indices
 
 def __encoded_messages(messages):
-    return format(sum([(2 ** i) for i, command in enumerate(COMMANDS) if command in messages]), 'b')
+    return format(sum([(2 ** i) for i, command in enumerate(COMMANDS) if command in messages]), b)
 
 def __is_valid_binary(code_pattern):
     return all(n in ['0', '1'] for n in code_pattern)
